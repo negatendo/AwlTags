@@ -3,9 +3,7 @@ require 'rss'
 require 'nokogiri'
 require 'open-uri'
 
-# This is an example bot definition with event handlers commented out
-# You can define and instantiate as many bots as you like
-
+# Read the Awl's RSS feed and post links to new items in the style of @AwlTags
 class AwlBot < Ebooks::Bot
 
   attr_accessor :url, :cache, :model
