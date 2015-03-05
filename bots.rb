@@ -23,6 +23,7 @@ class AwlBot < Ebooks::Bot
       # check for and post items every hr
       post_items
     end
+    post_items
   end
 
   def on_mention(tweet)
@@ -35,11 +36,6 @@ class AwlBot < Ebooks::Bot
     else
       log ("Unable to form dynamic response.")
     end 
-  end
-
-  def on_startup
-    # post items
-    post_items
   end
 
   def post_items
