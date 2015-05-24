@@ -12,7 +12,7 @@ class AwlBot < Ebooks::Bot
     # setup feed url
     @url = 'http://feeds2.feedburner.com/TheAwl'
     # path to cache file
-    @cache = ENV['HOME'] + '/AwlTagsCache.txt'
+    @cache = '/home/bretto/AwlTagsCache.txt'
     @model = Ebooks::Model.load('model/AwlTags.model')
   end
 
